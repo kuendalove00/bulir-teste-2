@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useAvailableServico } from "./state";
 import { Servicos } from "../../../components/Servicos";
 import Card from "../../../components/Card";
-import contractImage from '../assets/imagens/contrato.jpg';
+import contractImage from '../../../assets/imagens/contrato.jpg';
 
 
 export default function AvailableServico() {

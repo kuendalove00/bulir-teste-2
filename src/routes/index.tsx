@@ -11,6 +11,7 @@ import { ListServico } from "../pages/servicos/list";
 
 import Perfil from "../pages/perfil";
 import Layout from "../components/Layout";
+import AvailableServico from "../pages/servicos/availables";
 
 function AppRoutes() {
   return (
@@ -22,7 +23,7 @@ function AppRoutes() {
           <Route element={<Layout />}>
             <Route path={nomeRotas.servicos.cadastrar}  element={<AddServico />} />
             <Route path={nomeRotas.servicos.listar}  element={<ListServico />} />
-            <Route path={nomeRotas.servicos.disponiveis}  element={<ListServico />} />
+            <Route path={nomeRotas.servicos.disponiveis}  element={<AvailableServico />} />
             <Route path={nomeRotas.perfil}  element={<Perfil />} />
           </Route>
       </Routes>
