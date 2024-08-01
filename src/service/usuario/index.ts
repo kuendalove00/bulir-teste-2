@@ -5,8 +5,15 @@ import { Dados, Resposta } from "./types";
 
 async function salvar(dados: Dados): Promise<AxiosResponse<Resposta> | undefined>
 {
-    try{
-        const response: AxiosResponse<Resposta> = await axiosInstance.post("/usuario", dados);
+  
+console.log(JSON.stringify(dados))
+
+    const response: AxiosResponse<Resposta> = await axiosInstance.post("/usuario/registar", dados);
+
+    console.log(response);
+        
+    /*try{
+        
 
         return response;
 
@@ -20,7 +27,7 @@ async function salvar(dados: Dados): Promise<AxiosResponse<Resposta> | undefined
         {
             console.error('Erro desconhecido:', error);
         }
-    }
+    }*/
 }
 
 async function listar(): Promise<AxiosResponse<Resposta[]> | undefined>
